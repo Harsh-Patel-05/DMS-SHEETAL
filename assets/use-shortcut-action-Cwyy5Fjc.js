@@ -1,1 +1,0 @@
-import{r as e}from"./rolldown-runtime-hePW80VL.js";import{c as t}from"./forms-B5zJtJXX.js";import{n}from"./index-DNpKcfW1.js";var r=e(t(),1);function i(e,t,i=!0){(0,r.useEffect)(()=>{if(!i)return;let r=n=>{n.detail?.action===e&&t()};return window.addEventListener(n,r),()=>window.removeEventListener(n,r)},[e,t,i])}export{i as t};

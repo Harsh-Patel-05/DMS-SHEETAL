@@ -19,7 +19,10 @@ const lazyPage = (
   )
 }
 
-export const router = createBrowserRouter([
+const routerBasename = import.meta.env.BASE_URL.replace(/\/$/, '') || '/'
+
+export const router = createBrowserRouter(
+  [
   {
     path: '/login',
     element: lazyPage(() => import('@/pages/auth/LoginPage'), 'form'),
@@ -110,4 +113,6 @@ export const router = createBrowserRouter([
     ],
   },
   { path: '*', element: <LandingRedirect /> },
-])
+  ],
+  { basename: routerBasename },
+)

@@ -6,7 +6,11 @@ import tailwindcss from '@tailwindcss/vite'
 
 const rootDir = path.dirname(fileURLToPath(import.meta.url))
 
+/** Project site path on GitHub Pages: https://Harsh-Patel-05.github.io/DMS-SHEETAL/ */
+const pagesBase = process.env.GITHUB_PAGES === '1' ? '/DMS-SHEETAL/' : '/'
+
 export default defineConfig({
+  base: pagesBase,
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {

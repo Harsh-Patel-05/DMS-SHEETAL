@@ -126,11 +126,11 @@ export default function PersonalizationPage() {
             )}
           >
             <p className="text-sm font-semibold text-ink">Dark</p>
-            <p className="mt-1 text-xs text-ink-muted">Deep navy canvas with teal charts and controls</p>
+            <p className="mt-1 text-xs text-ink-muted">Soft navy elevation — teal accents, readable contrast</p>
             <div className="mt-3 flex gap-1.5">
-              <span className="h-6 flex-1 rounded-sm bg-[#060d16] ring-1 ring-white/10" />
-              <span className="h-6 flex-1 rounded-sm bg-[#0e1a29] ring-1 ring-white/10" />
-              <span className="h-6 flex-1 rounded-sm bg-[#2ea8cb]" />
+              <span className="h-6 flex-1 rounded-sm bg-[#0b1524] ring-1 ring-white/10" />
+              <span className="h-6 flex-1 rounded-sm bg-[#152338] ring-1 ring-white/10" />
+              <span className="h-6 flex-1 rounded-sm bg-[#1f9bc0]" />
             </div>
           </button>
         </div>

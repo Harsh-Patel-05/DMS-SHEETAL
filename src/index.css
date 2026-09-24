@@ -10,29 +10,29 @@
   --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
   --font-display: "DM Sans", ui-sans-serif, system-ui, sans-serif;
 
-  /* Brand — Sheetal Cool: deep navy sidebar + cyan accent (cooling / ERP) */
-  --color-brand-50: #ecfeff;
-  --color-brand-100: #cffafe;
-  --color-brand-200: #a5f3fc;
-  --color-brand-300: #67e8f9;
-  --color-brand-400: #22d3ee;
-  --color-brand-500: #06b6d4;
-  --color-brand-600: #0891b2;
-  --color-brand-700: #0e7490;
-  --color-brand-800: #155e75;
-  --color-brand-900: #164e63;
+  /* Brand — Sheetal Cool ERP: navy + ocean teal (clear, professional) */
+  --color-brand-50: #eef8fc;
+  --color-brand-100: #d5eff8;
+  --color-brand-200: #a8dff0;
+  --color-brand-300: #6bc5e0;
+  --color-brand-400: #2ea8cb;
+  --color-brand-500: #0e8fb4;
+  --color-brand-600: #0077a8;
+  --color-brand-700: #025f88;
+  --color-brand-800: #064e6f;
+  --color-brand-900: #0a3d57;
 
-  /* Light surfaces — cool slate canvas, white cards */
-  --color-surface: #f1f5f9;
+  /* Light surfaces — cool gray workspace */
+  --color-surface: #eef2f7;
   --color-surface-elevated: #ffffff;
-  --color-surface-muted: #e8eef5;
+  --color-surface-muted: #e2e8f0;
   --color-surface-sunken: #f8fafc;
-  --color-border: #d0d9e4;
-  --color-border-strong: #a8b6c7;
-  --color-ink: #0f172a;
+  --color-border: #c5d0de;
+  --color-border-strong: #94a3b8;
+  --color-ink: #0b1220;
   --color-ink-muted: #475569;
   --color-ink-subtle: #64748b;
-  --color-overlay: rgb(15 23 42 / 0.48);
+  --color-overlay: rgb(11 18 32 / 0.5);
   --color-ring-offset: #ffffff;
 
   /* Status — light */
@@ -50,32 +50,32 @@
   --color-info-border: #7dd3fc;
 
   /* Sidebar — deep navy */
-  --color-sidebar: #0b1f33;
-  --color-sidebar-elevated: #123049;
+  --color-sidebar: #0a1628;
+  --color-sidebar-elevated: #12233a;
   --color-sidebar-border: rgb(255 255 255 / 0.1);
   --color-sidebar-fg: #e8f4fc;
-  --color-sidebar-muted: rgb(186 230 253 / 0.72);
+  --color-sidebar-muted: rgb(174 220 239 / 0.75);
 
-  /* Charts — cyan / slate scale */
-  --chart-1: #0891b2;
-  --chart-2: #0e7490;
-  --chart-3: #155e75;
-  --chart-4: #22d3ee;
+  /* Charts */
+  --chart-1: #0077a8;
+  --chart-2: #0e8fb4;
+  --chart-3: #025f88;
+  --chart-4: #2ea8cb;
   --chart-5: #64748b;
   --chart-tick: #475569;
   --chart-axis: #cbd5e1;
   --chart-grid: #e2e8f0;
   --chart-tooltip-bg: #ffffff;
-  --chart-tooltip-border: #d0d9e4;
+  --chart-tooltip-border: #c5d0de;
 
   --radius-sm: 0.375rem;
   --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
   --radius-xl: 0.875rem;
 
-  --shadow-card: 0 1px 2px rgb(15 23 42 / 0.04), 0 1px 3px rgb(15 23 42 / 0.06);
-  --shadow-elevated: 0 4px 14px rgb(15 23 42 / 0.1);
-  --shadow-dialog: 0 16px 40px rgb(15 23 42 / 0.18);
+  --shadow-card: 0 1px 2px rgb(10 22 40 / 0.05), 0 1px 3px rgb(10 22 40 / 0.07);
+  --shadow-elevated: 0 6px 18px rgb(10 22 40 / 0.12);
+  --shadow-dialog: 0 18px 44px rgb(10 22 40 / 0.2);
 
   --spacing-page-x: 1.5rem;
   --spacing-page-y: 1.5rem;
@@ -100,27 +100,27 @@
 html.dark {
   color-scheme: dark;
 
-  --color-brand-50: rgb(8 145 178 / 0.14);
-  --color-brand-100: rgb(8 145 178 / 0.22);
-  --color-brand-200: rgb(34 211 238 / 0.28);
-  --color-brand-300: #67e8f9;
-  --color-brand-400: #22d3ee;
-  --color-brand-500: #06b6d4;
-  --color-brand-600: #22d3ee;
-  --color-brand-700: #67e8f9;
-  --color-brand-800: #0891b2;
+  --color-brand-50: rgb(0 119 168 / 0.14);
+  --color-brand-100: rgb(0 119 168 / 0.22);
+  --color-brand-200: rgb(46 168 203 / 0.3);
+  --color-brand-300: #6bc5e0;
+  --color-brand-400: #2ea8cb;
+  --color-brand-500: #0e8fb4;
+  --color-brand-600: #2ea8cb;
+  --color-brand-700: #6bc5e0;
+  --color-brand-800: #0077a8;
 
-  --color-surface: #070f18;
-  --color-surface-elevated: #0f1c2b;
-  --color-surface-muted: #0b1622;
-  --color-surface-sunken: #050b12;
-  --color-border: #243447;
-  --color-border-strong: #3a5168;
+  --color-surface: #060d16;
+  --color-surface-elevated: #0e1a29;
+  --color-surface-muted: #0a1420;
+  --color-surface-sunken: #04090f;
+  --color-border: #1e3044;
+  --color-border-strong: #334e68;
   --color-ink: #e8f1f8;
-  --color-ink-muted: #94a8bc;
+  --color-ink-muted: #93a8bd;
   --color-ink-subtle: #6b8299;
-  --color-overlay: rgb(2 6 12 / 0.72);
-  --color-ring-offset: #0f1c2b;
+  --color-overlay: rgb(2 6 12 / 0.75);
+  --color-ring-offset: #0e1a29;
 
   --color-success: #34d399;
   --color-success-bg: rgb(16 185 129 / 0.14);
@@ -135,22 +135,22 @@ html.dark {
   --color-info-bg: rgb(14 165 233 / 0.14);
   --color-info-border: rgb(56 189 248 / 0.35);
 
-  --color-sidebar: #061018;
-  --color-sidebar-elevated: #0c2236;
-  --color-sidebar-border: rgb(34 211 238 / 0.12);
+  --color-sidebar: #050b14;
+  --color-sidebar-elevated: #0d1c2e;
+  --color-sidebar-border: rgb(46 168 203 / 0.14);
   --color-sidebar-fg: #e0f2fe;
-  --color-sidebar-muted: rgb(186 230 253 / 0.62);
+  --color-sidebar-muted: rgb(174 220 239 / 0.65);
 
-  --chart-1: #22d3ee;
-  --chart-2: #06b6d4;
-  --chart-3: #67e8f9;
-  --chart-4: #0891b2;
+  --chart-1: #2ea8cb;
+  --chart-2: #0e8fb4;
+  --chart-3: #6bc5e0;
+  --chart-4: #0077a8;
   --chart-5: #94a3b8;
-  --chart-tick: #94a8bc;
-  --chart-axis: #3a5168;
-  --chart-grid: #243447;
-  --chart-tooltip-bg: #152536;
-  --chart-tooltip-border: #3a5168;
+  --chart-tick: #93a8bd;
+  --chart-axis: #334e68;
+  --chart-grid: #1e3044;
+  --chart-tooltip-bg: #132233;
+  --chart-tooltip-border: #334e68;
 
   --shadow-card: 0 1px 0 rgb(255 255 255 / 0.03), 0 1px 3px rgb(0 0 0 / 0.45);
   --shadow-elevated: 0 8px 24px rgb(0 0 0 / 0.55);
@@ -171,9 +171,19 @@ html:not(.dark) {
   }
 
   body {
-    @apply bg-surface text-ink font-sans text-sm;
+    @apply text-ink font-sans text-sm;
     margin: 0;
     min-height: 100vh;
+    background-color: var(--color-surface);
+    background-image:
+      radial-gradient(900px 420px at 8% -8%, color-mix(in srgb, var(--color-brand-200) 45%, transparent), transparent),
+      radial-gradient(700px 360px at 100% 0%, color-mix(in srgb, var(--color-brand-100) 55%, transparent), transparent);
+  }
+
+  html.dark body {
+    background-image:
+      radial-gradient(900px 420px at 8% -8%, color-mix(in srgb, var(--color-brand-600) 18%, transparent), transparent),
+      radial-gradient(700px 360px at 100% 0%, color-mix(in srgb, var(--color-brand-800) 22%, transparent), transparent);
   }
 
   #root {
@@ -578,7 +588,7 @@ html:not(.dark) {
     border-radius: 9999px;
     background: var(--color-brand-600);
     color: white;
-    box-shadow: 0 6px 16px rgb(8 145 178 / 0.35);
+    box-shadow: 0 6px 16px rgb(0 119 168 / 0.38);
     touch-action: manipulation;
   }
 

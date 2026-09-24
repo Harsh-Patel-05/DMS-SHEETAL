@@ -77,26 +77,34 @@ export default function LoginPage() {
 
   return (
     <div className="flex min-h-screen">
-      <div className="relative hidden flex-1 flex-col justify-between bg-brand-900 p-10 text-white lg:flex">
-        <div className="flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-brand-400/20">
+      <div className="relative hidden flex-1 flex-col justify-between bg-sidebar p-10 text-sidebar-fg lg:flex">
+        <div
+          className="pointer-events-none absolute inset-0 opacity-40"
+          style={{
+            background:
+              'radial-gradient(600px 320px at 20% 15%, color-mix(in srgb, var(--color-brand-500) 35%, transparent), transparent)',
+          }}
+          aria-hidden
+        />
+        <div className="relative flex items-center gap-3">
+          <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-brand-500/25 ring-1 ring-brand-300/30">
             <Snowflake className="h-6 w-6 text-brand-200" />
           </div>
           <div>
-            <p className="font-display text-lg font-semibold">DMS.SHEETAL</p>
+            <p className="font-display text-lg font-semibold text-white">DMS.SHEETAL</p>
             <p className="text-sm tracking-widest text-brand-300">COOL</p>
           </div>
         </div>
-        <div className="max-w-md">
-          <h1 className="font-display text-3xl font-semibold leading-tight">
+        <div className="relative max-w-md">
+          <h1 className="font-display text-3xl font-semibold leading-tight text-white">
             Distribution management for cooling &amp; appliances
           </h1>
-          <p className="mt-4 text-brand-100/80">
+          <p className="mt-4 text-sidebar-muted">
             Track inventory, sales, purchases, and receivables across Indore and your dealer network — all in one
             workspace.
           </p>
         </div>
-        <p className="text-xs text-brand-300/70">Secure demo environment · data persists in your browser</p>
+        <p className="relative text-xs text-sidebar-muted">Secure demo environment · data persists in your browser</p>
       </div>
 
       <div className="flex flex-1 flex-col justify-center px-6 py-12 sm:px-12">

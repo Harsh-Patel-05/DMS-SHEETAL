@@ -103,11 +103,12 @@ export default function PersonalizationPage() {
             )}
           >
             <p className="text-sm font-semibold text-ink">Light</p>
-            <p className="mt-1 text-xs text-ink-muted">Cool slate canvas — navy sidebar &amp; cyan accents</p>
+            <p className="mt-1 text-xs text-ink-muted">Cool gray workspace — navy sidebar &amp; ocean teal accents</p>
             <div className="mt-3 flex gap-1.5">
-              <span className="h-6 flex-1 rounded-sm bg-[#f1f5f9] ring-1 ring-black/5" />
+              <span className="h-6 flex-1 rounded-sm bg-[#eef2f7] ring-1 ring-black/5" />
               <span className="h-6 flex-1 rounded-sm bg-white ring-1 ring-black/5" />
-              <span className="h-6 flex-1 rounded-sm bg-[#0891b2]" />
+              <span className="h-6 flex-1 rounded-sm bg-[#0077a8]" />
+              <span className="h-6 flex-1 rounded-sm bg-[#0a1628]" />
             </div>
           </button>
           <button
@@ -125,11 +126,11 @@ export default function PersonalizationPage() {
             )}
           >
             <p className="text-sm font-semibold text-ink">Dark</p>
-            <p className="mt-1 text-xs text-ink-muted">Deep navy canvas, lifted panels, cyan charts</p>
+            <p className="mt-1 text-xs text-ink-muted">Deep navy canvas with teal charts and controls</p>
             <div className="mt-3 flex gap-1.5">
-              <span className="h-6 flex-1 rounded-sm bg-[#070f18] ring-1 ring-white/10" />
-              <span className="h-6 flex-1 rounded-sm bg-[#0f1c2b] ring-1 ring-white/10" />
-              <span className="h-6 flex-1 rounded-sm bg-[#22d3ee]" />
+              <span className="h-6 flex-1 rounded-sm bg-[#060d16] ring-1 ring-white/10" />
+              <span className="h-6 flex-1 rounded-sm bg-[#0e1a29] ring-1 ring-white/10" />
+              <span className="h-6 flex-1 rounded-sm bg-[#2ea8cb]" />
             </div>
           </button>
         </div>

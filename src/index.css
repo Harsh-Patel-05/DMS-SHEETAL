@@ -96,65 +96,67 @@
   --font-size-title: 1.5rem;
 }
 
-/* Dark — deep navy canvas, lifted panels, luminous cyan accents */
+/* Dark — soft navy elevation ladder (canvas → card → control), teal accents */
 html.dark {
   color-scheme: dark;
 
-  --color-brand-50: rgb(0 119 168 / 0.14);
-  --color-brand-100: rgb(0 119 168 / 0.22);
-  --color-brand-200: rgb(46 168 203 / 0.3);
-  --color-brand-300: #6bc5e0;
-  --color-brand-400: #2ea8cb;
-  --color-brand-500: #0e8fb4;
-  --color-brand-600: #2ea8cb;
-  --color-brand-700: #6bc5e0;
-  --color-brand-800: #0077a8;
+  /* 600 = primary fill, 700/800 = darker hover (usable on buttons) */
+  --color-brand-50: rgb(46 168 203 / 0.12);
+  --color-brand-100: rgb(46 168 203 / 0.18);
+  --color-brand-200: rgb(46 168 203 / 0.32);
+  --color-brand-300: #7dd3ea;
+  --color-brand-400: #4eb8d6;
+  --color-brand-500: #2ea8cb;
+  --color-brand-600: #1f9bc0;
+  --color-brand-700: #1782a3;
+  --color-brand-800: #126a86;
+  --color-brand-900: #0e5570;
 
-  --color-surface: #060d16;
-  --color-surface-elevated: #0e1a29;
-  --color-surface-muted: #0a1420;
-  --color-surface-sunken: #04090f;
-  --color-border: #1e3044;
-  --color-border-strong: #334e68;
-  --color-ink: #e8f1f8;
-  --color-ink-muted: #93a8bd;
-  --color-ink-subtle: #6b8299;
-  --color-overlay: rgb(2 6 12 / 0.75);
-  --color-ring-offset: #0e1a29;
+  --color-surface: #0b1524;
+  --color-surface-elevated: #152338;
+  --color-surface-muted: #101c2e;
+  --color-surface-sunken: #0d1828;
+  --color-border: #2a3f58;
+  --color-border-strong: #3d5a78;
+  --color-ink: #f1f6fb;
+  --color-ink-muted: #a8b9cc;
+  --color-ink-subtle: #7d93ab;
+  --color-overlay: rgb(4 8 16 / 0.72);
+  --color-ring-offset: #152338;
 
   --color-success: #34d399;
-  --color-success-bg: rgb(16 185 129 / 0.14);
-  --color-success-border: rgb(52 211 153 / 0.35);
+  --color-success-bg: rgb(16 185 129 / 0.16);
+  --color-success-border: rgb(52 211 153 / 0.4);
   --color-warning: #fbbf24;
-  --color-warning-bg: rgb(245 158 11 / 0.14);
-  --color-warning-border: rgb(251 191 36 / 0.35);
+  --color-warning-bg: rgb(245 158 11 / 0.16);
+  --color-warning-border: rgb(251 191 36 / 0.4);
   --color-danger: #f87171;
-  --color-danger-bg: rgb(239 68 68 / 0.14);
-  --color-danger-border: rgb(248 113 113 / 0.35);
-  --color-info: #38bdf8;
-  --color-info-bg: rgb(14 165 233 / 0.14);
-  --color-info-border: rgb(56 189 248 / 0.35);
+  --color-danger-bg: rgb(239 68 68 / 0.16);
+  --color-danger-border: rgb(248 113 113 / 0.4);
+  --color-info: #7dd3fc;
+  --color-info-bg: rgb(14 165 233 / 0.16);
+  --color-info-border: rgb(125 211 252 / 0.4);
 
-  --color-sidebar: #050b14;
-  --color-sidebar-elevated: #0d1c2e;
-  --color-sidebar-border: rgb(46 168 203 / 0.14);
-  --color-sidebar-fg: #e0f2fe;
-  --color-sidebar-muted: rgb(174 220 239 / 0.65);
+  --color-sidebar: #07101c;
+  --color-sidebar-elevated: #0f1c2e;
+  --color-sidebar-border: rgb(78 184 214 / 0.16);
+  --color-sidebar-fg: #e8f4fc;
+  --color-sidebar-muted: rgb(168 185 204 / 0.85);
 
-  --chart-1: #2ea8cb;
-  --chart-2: #0e8fb4;
-  --chart-3: #6bc5e0;
-  --chart-4: #0077a8;
+  --chart-1: #4eb8d6;
+  --chart-2: #2ea8cb;
+  --chart-3: #7dd3ea;
+  --chart-4: #1f9bc0;
   --chart-5: #94a3b8;
-  --chart-tick: #93a8bd;
-  --chart-axis: #334e68;
-  --chart-grid: #1e3044;
-  --chart-tooltip-bg: #132233;
-  --chart-tooltip-border: #334e68;
+  --chart-tick: #a8b9cc;
+  --chart-axis: #3d5a78;
+  --chart-grid: #24384f;
+  --chart-tooltip-bg: #1a2d44;
+  --chart-tooltip-border: #3d5a78;
 
-  --shadow-card: 0 1px 0 rgb(255 255 255 / 0.03), 0 1px 3px rgb(0 0 0 / 0.45);
-  --shadow-elevated: 0 8px 24px rgb(0 0 0 / 0.55);
-  --shadow-dialog: 0 20px 48px rgb(0 0 0 / 0.65);
+  --shadow-card: 0 1px 0 rgb(255 255 255 / 0.04), 0 1px 3px rgb(0 0 0 / 0.4);
+  --shadow-elevated: 0 10px 28px rgb(0 0 0 / 0.5);
+  --shadow-dialog: 0 22px 52px rgb(0 0 0 / 0.62);
 }
 
 html:not(.dark) {
@@ -182,8 +184,8 @@ html:not(.dark) {
 
   html.dark body {
     background-image:
-      radial-gradient(900px 420px at 8% -8%, color-mix(in srgb, var(--color-brand-600) 18%, transparent), transparent),
-      radial-gradient(700px 360px at 100% 0%, color-mix(in srgb, var(--color-brand-800) 22%, transparent), transparent);
+      radial-gradient(800px 380px at 12% -12%, color-mix(in srgb, var(--color-brand-500) 14%, transparent), transparent),
+      radial-gradient(640px 320px at 100% 0%, color-mix(in srgb, var(--color-brand-700) 12%, transparent), transparent);
   }
 
   #root {
@@ -283,7 +285,36 @@ html:not(.dark) {
   }
 
   html.dark .erp-control {
-    box-shadow: inset 0 1px 2px rgb(0 0 0 / 0.35);
+    background-color: var(--color-surface-muted);
+    border-color: var(--color-border);
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 0.28);
+  }
+
+  html.dark .erp-control:focus-visible {
+    border-color: var(--color-brand-400);
+    background-color: var(--color-surface-elevated);
+  }
+
+  html.dark .erp-card,
+  html.dark .erp-table-wrap {
+    border-color: var(--color-border);
+    box-shadow: var(--shadow-card);
+  }
+
+  html.dark .erp-list-toolbar {
+    background: color-mix(in srgb, var(--color-surface-muted) 80%, var(--color-brand-50));
+  }
+
+  html.dark .erp-table thead {
+    background: color-mix(in srgb, var(--color-surface-muted) 70%, var(--color-brand-100));
+  }
+
+  html.dark .erp-table tbody tr:nth-child(even) {
+    background-color: color-mix(in srgb, var(--color-brand-50) 55%, transparent);
+  }
+
+  html.dark .erp-table tbody tr:hover {
+    background-color: color-mix(in srgb, var(--color-brand-100) 70%, var(--color-surface-elevated));
   }
 
   .erp-control::placeholder {

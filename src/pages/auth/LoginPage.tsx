@@ -110,7 +110,7 @@ export default function LoginPage() {
       <div className="flex flex-1 flex-col justify-center px-6 py-12 sm:px-12">
         <main className="mx-auto w-full max-w-md">
           <div className="mb-8">
-            <h1 className="font-display text-xl font-semibold text-brand-900 lg:text-2xl lg:text-ink">
+            <h1 className="font-display text-xl font-semibold text-ink lg:text-2xl">
               <span className="lg:hidden">DMS.SHEETAL COOL</span>
               <span className="hidden lg:inline">Sign in</span>
             </h1>
@@ -172,8 +172,10 @@ export default function LoginPage() {
                   key={u.username}
                   type="button"
                   className={cn(
-                    'rounded-full border border-brand-200 bg-brand-50 px-3 py-1 text-xs font-medium text-brand-800',
-                    'hover:bg-brand-100',
+                    'rounded-full border border-border bg-surface-muted px-3 py-1 text-xs font-medium text-ink',
+                    'hover:border-brand-400 hover:bg-brand-50 hover:text-brand-700',
+                    'dark:border-border-strong dark:bg-surface-elevated dark:text-ink-muted',
+                    'dark:hover:border-brand-400 dark:hover:bg-brand-100 dark:hover:text-brand-300',
                   )}
                   onClick={() => {
                     form.setValue('username', u.username)

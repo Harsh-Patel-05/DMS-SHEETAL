@@ -1,1 +1,0 @@
-import{i as e}from"./react-vendor-DL_CRepa.js";import{t}from"./use-permission-DhPqyuOV.js";var n=e();function r({module:e,action:r=`view`,children:i,fallback:a=null}){let{can:o}=t(e);return o(r)?(0,n.jsx)(n.Fragment,{children:i}):(0,n.jsx)(n.Fragment,{children:a})}export{r as t};

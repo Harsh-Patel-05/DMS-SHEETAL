@@ -10,29 +10,29 @@
   --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
   --font-display: "DM Sans", ui-sans-serif, system-ui, sans-serif;
 
-  /* Brand — Sheetal Food World magenta / pink (#ED217C) + white */
-  --color-brand-50: #fff0f6;
-  --color-brand-100: #ffe0ec;
-  --color-brand-200: #facce8;
-  --color-brand-300: #ff9ec8;
-  --color-brand-400: #ff6ba8;
-  --color-brand-500: #f43f8c;
-  --color-brand-600: #ed217c;
-  --color-brand-700: #d11a6c;
-  --color-brand-800: #b0155a;
-  --color-brand-900: #8a1248;
+  /* Brand — Sheetal Cool: deep navy sidebar + cyan accent (cooling / ERP) */
+  --color-brand-50: #ecfeff;
+  --color-brand-100: #cffafe;
+  --color-brand-200: #a5f3fc;
+  --color-brand-300: #67e8f9;
+  --color-brand-400: #22d3ee;
+  --color-brand-500: #06b6d4;
+  --color-brand-600: #0891b2;
+  --color-brand-700: #0e7490;
+  --color-brand-800: #155e75;
+  --color-brand-900: #164e63;
 
-  /* Light surfaces — soft pink-tint canvas, pure white cards */
-  --color-surface: #fff7fa;
+  /* Light surfaces — cool slate canvas, white cards */
+  --color-surface: #f1f5f9;
   --color-surface-elevated: #ffffff;
-  --color-surface-muted: #ffeef5;
-  --color-surface-sunken: #fffafc;
-  --color-border: #f0d4e0;
-  --color-border-strong: #e4b8cb;
-  --color-ink: #2a1220;
-  --color-ink-muted: #7a5a68;
-  --color-ink-subtle: #9a7a88;
-  --color-overlay: rgb(42 18 32 / 0.45);
+  --color-surface-muted: #e8eef5;
+  --color-surface-sunken: #f8fafc;
+  --color-border: #d0d9e4;
+  --color-border-strong: #a8b6c7;
+  --color-ink: #0f172a;
+  --color-ink-muted: #475569;
+  --color-ink-subtle: #64748b;
+  --color-overlay: rgb(15 23 42 / 0.48);
   --color-ring-offset: #ffffff;
 
   /* Status — light */
@@ -45,37 +45,37 @@
   --color-danger: #dc2626;
   --color-danger-bg: #fef2f2;
   --color-danger-border: #fecaca;
-  --color-info: #7c3aed;
-  --color-info-bg: #f5f3ff;
-  --color-info-border: #ddd6fe;
+  --color-info: #0369a1;
+  --color-info-bg: #e0f2fe;
+  --color-info-border: #7dd3fc;
 
-  /* Sidebar — deep Sheetal magenta */
-  --color-sidebar: #8a1248;
-  --color-sidebar-elevated: #b0155a;
-  --color-sidebar-border: rgb(255 255 255 / 0.14);
-  --color-sidebar-fg: #fff0f6;
-  --color-sidebar-muted: rgb(255 224 236 / 0.75);
+  /* Sidebar — deep navy */
+  --color-sidebar: #0b1f33;
+  --color-sidebar-elevated: #123049;
+  --color-sidebar-border: rgb(255 255 255 / 0.1);
+  --color-sidebar-fg: #e8f4fc;
+  --color-sidebar-muted: rgb(186 230 253 / 0.72);
 
-  /* Charts — light pink scale */
-  --chart-1: #ed217c;
-  --chart-2: #f43f8c;
-  --chart-3: #b0155a;
-  --chart-4: #ff6ba8;
-  --chart-5: #d11a6c;
-  --chart-tick: #7a5a68;
-  --chart-axis: #e4b8cb;
-  --chart-grid: #ffe0ec;
+  /* Charts — cyan / slate scale */
+  --chart-1: #0891b2;
+  --chart-2: #0e7490;
+  --chart-3: #155e75;
+  --chart-4: #22d3ee;
+  --chart-5: #64748b;
+  --chart-tick: #475569;
+  --chart-axis: #cbd5e1;
+  --chart-grid: #e2e8f0;
   --chart-tooltip-bg: #ffffff;
-  --chart-tooltip-border: #f0d4e0;
+  --chart-tooltip-border: #d0d9e4;
 
   --radius-sm: 0.375rem;
   --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
   --radius-xl: 0.875rem;
 
-  --shadow-card: 0 1px 2px rgb(138 18 72 / 0.04), 0 1px 3px rgb(138 18 72 / 0.06);
-  --shadow-elevated: 0 4px 14px rgb(138 18 72 / 0.1);
-  --shadow-dialog: 0 16px 40px rgb(42 18 32 / 0.18);
+  --shadow-card: 0 1px 2px rgb(15 23 42 / 0.04), 0 1px 3px rgb(15 23 42 / 0.06);
+  --shadow-elevated: 0 4px 14px rgb(15 23 42 / 0.1);
+  --shadow-dialog: 0 16px 40px rgb(15 23 42 / 0.18);
 
   --spacing-page-x: 1.5rem;
   --spacing-page-y: 1.5rem;
@@ -96,31 +96,31 @@
   --font-size-title: 1.5rem;
 }
 
-/* Dark — plum canvas, lifted panels, luminous Sheetal pink accents */
+/* Dark — deep navy canvas, lifted panels, luminous cyan accents */
 html.dark {
   color-scheme: dark;
 
-  --color-brand-50: rgb(237 33 124 / 0.12);
-  --color-brand-100: rgb(237 33 124 / 0.18);
-  --color-brand-200: rgb(255 107 168 / 0.32);
-  --color-brand-300: #ff9ec8;
-  --color-brand-400: #ff6ba8;
-  --color-brand-500: #f43f8c;
-  --color-brand-600: #ed217c;
-  --color-brand-700: #ff4d94;
-  --color-brand-800: #ed217c;
+  --color-brand-50: rgb(8 145 178 / 0.14);
+  --color-brand-100: rgb(8 145 178 / 0.22);
+  --color-brand-200: rgb(34 211 238 / 0.28);
+  --color-brand-300: #67e8f9;
+  --color-brand-400: #22d3ee;
+  --color-brand-500: #06b6d4;
+  --color-brand-600: #22d3ee;
+  --color-brand-700: #67e8f9;
+  --color-brand-800: #0891b2;
 
-  --color-surface: #140810;
-  --color-surface-elevated: #1f1018;
-  --color-surface-muted: #1a0c14;
-  --color-surface-sunken: #0f060c;
-  --color-border: #3d2432;
-  --color-border-strong: #5a3548;
-  --color-ink: #fce8f1;
-  --color-ink-muted: #c9a4b4;
-  --color-ink-subtle: #9a7384;
-  --color-overlay: rgb(10 4 8 / 0.72);
-  --color-ring-offset: #1f1018;
+  --color-surface: #070f18;
+  --color-surface-elevated: #0f1c2b;
+  --color-surface-muted: #0b1622;
+  --color-surface-sunken: #050b12;
+  --color-border: #243447;
+  --color-border-strong: #3a5168;
+  --color-ink: #e8f1f8;
+  --color-ink-muted: #94a8bc;
+  --color-ink-subtle: #6b8299;
+  --color-overlay: rgb(2 6 12 / 0.72);
+  --color-ring-offset: #0f1c2b;
 
   --color-success: #34d399;
   --color-success-bg: rgb(16 185 129 / 0.14);
@@ -131,26 +131,26 @@ html.dark {
   --color-danger: #f87171;
   --color-danger-bg: rgb(239 68 68 / 0.14);
   --color-danger-border: rgb(248 113 113 / 0.35);
-  --color-info: #c4b5fd;
-  --color-info-bg: rgb(124 58 237 / 0.14);
-  --color-info-border: rgb(167 139 250 / 0.35);
+  --color-info: #38bdf8;
+  --color-info-bg: rgb(14 165 233 / 0.14);
+  --color-info-border: rgb(56 189 248 / 0.35);
 
-  --color-sidebar: #5c0c30;
-  --color-sidebar-elevated: #8a1248;
-  --color-sidebar-border: rgb(255 158 200 / 0.14);
-  --color-sidebar-fg: #fff0f6;
-  --color-sidebar-muted: rgb(255 224 236 / 0.65);
+  --color-sidebar: #061018;
+  --color-sidebar-elevated: #0c2236;
+  --color-sidebar-border: rgb(34 211 238 / 0.12);
+  --color-sidebar-fg: #e0f2fe;
+  --color-sidebar-muted: rgb(186 230 253 / 0.62);
 
-  --chart-1: #ff6ba8;
-  --chart-2: #ed217c;
-  --chart-3: #ff9ec8;
-  --chart-4: #f43f8c;
-  --chart-5: #facce8;
-  --chart-tick: #c9a4b4;
-  --chart-axis: #5a3548;
-  --chart-grid: #3d2432;
-  --chart-tooltip-bg: #2a1520;
-  --chart-tooltip-border: #5a3548;
+  --chart-1: #22d3ee;
+  --chart-2: #06b6d4;
+  --chart-3: #67e8f9;
+  --chart-4: #0891b2;
+  --chart-5: #94a3b8;
+  --chart-tick: #94a8bc;
+  --chart-axis: #3a5168;
+  --chart-grid: #243447;
+  --chart-tooltip-bg: #152536;
+  --chart-tooltip-border: #3a5168;
 
   --shadow-card: 0 1px 0 rgb(255 255 255 / 0.03), 0 1px 3px rgb(0 0 0 / 0.45);
   --shadow-elevated: 0 8px 24px rgb(0 0 0 / 0.55);
@@ -578,7 +578,7 @@ html:not(.dark) {
     border-radius: 9999px;
     background: var(--color-brand-600);
     color: white;
-    box-shadow: 0 6px 16px rgb(237 33 124 / 0.35);
+    box-shadow: 0 6px 16px rgb(8 145 178 / 0.35);
     touch-action: manipulation;
   }
 

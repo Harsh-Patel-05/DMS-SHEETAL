@@ -103,11 +103,11 @@ export default function PersonalizationPage() {
             )}
           >
             <p className="text-sm font-semibold text-ink">Light</p>
-            <p className="mt-1 text-xs text-ink-muted">Pink &amp; white canvas — Sheetal Food World accents</p>
+            <p className="mt-1 text-xs text-ink-muted">Cool slate canvas — navy sidebar &amp; cyan accents</p>
             <div className="mt-3 flex gap-1.5">
-              <span className="h-6 flex-1 rounded-sm bg-[#fff7fa] ring-1 ring-black/5" />
+              <span className="h-6 flex-1 rounded-sm bg-[#f1f5f9] ring-1 ring-black/5" />
               <span className="h-6 flex-1 rounded-sm bg-white ring-1 ring-black/5" />
-              <span className="h-6 flex-1 rounded-sm bg-[#ED217C]" />
+              <span className="h-6 flex-1 rounded-sm bg-[#0891b2]" />
             </div>
           </button>
           <button
@@ -125,11 +125,11 @@ export default function PersonalizationPage() {
             )}
           >
             <p className="text-sm font-semibold text-ink">Dark</p>
-            <p className="mt-1 text-xs text-ink-muted">Deep plum canvas, lifted panels, luminous pink charts</p>
+            <p className="mt-1 text-xs text-ink-muted">Deep navy canvas, lifted panels, cyan charts</p>
             <div className="mt-3 flex gap-1.5">
-              <span className="h-6 flex-1 rounded-sm bg-[#140810] ring-1 ring-white/10" />
-              <span className="h-6 flex-1 rounded-sm bg-[#1f1018] ring-1 ring-white/10" />
-              <span className="h-6 flex-1 rounded-sm bg-[#ED217C]" />
+              <span className="h-6 flex-1 rounded-sm bg-[#070f18] ring-1 ring-white/10" />
+              <span className="h-6 flex-1 rounded-sm bg-[#0f1c2b] ring-1 ring-white/10" />
+              <span className="h-6 flex-1 rounded-sm bg-[#22d3ee]" />
             </div>
           </button>
         </div>

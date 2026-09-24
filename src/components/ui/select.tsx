@@ -109,7 +109,7 @@ function flattenOptions(items: ParsedItem[]): ParsedOption[] {
 
 /**
  * Themed select — same API as a native &lt;select&gt; (including &lt;option&gt; children
- * and react-hook-form register), but the open menu uses project pink styling
+ * and react-hook-form register), but the open menu uses project brand styling
  * instead of the browser default list.
  */
 export const Select = forwardRef<HTMLSelectElement, SelectProps>(

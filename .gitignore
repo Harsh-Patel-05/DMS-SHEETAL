@@ -12,8 +12,6 @@ dist
 dist-ssr
 temp_auto_push.bat
 *.local
-.env
-.env.*
 !.env.example
 
 # Editor directories and files
@@ -26,3 +24,4 @@ temp_auto_push.bat
 *.sw?
 .gitignore
 branch_structure.json
+config.bat

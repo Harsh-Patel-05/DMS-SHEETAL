@@ -915,7 +915,7 @@ export default function SaleFormPage() {
                             <span
                               className={cn(
                                 'block truncate text-xs',
-                                active ? 'text-brand-100' : 'text-ink-muted',
+                                active ? 'text-white/80' : 'text-ink-muted',
                               )}
                             >
                               {p.sku}

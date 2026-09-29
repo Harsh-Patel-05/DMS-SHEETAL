@@ -57,7 +57,7 @@ export function Sidebar({ mobileOpen, onMobileClose, className }: SidebarProps) 
     () => (
       <div className="flex h-full flex-col">
         <div className={cn('flex h-14 shrink-0 items-center border-b border-white/10', collapsed ? 'justify-center px-2' : 'gap-2.5 px-4')}>
-          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-brand-400/20 text-brand-200">
+          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-brand-400/20 text-brand-300">
             <Snowflake className="h-5 w-5" aria-hidden />
           </div>
           {!collapsed ? (
@@ -88,7 +88,7 @@ export function Sidebar({ mobileOpen, onMobileClose, className }: SidebarProps) 
                           'flex items-center justify-center rounded-md px-2 py-2.5 transition-colors',
                           isActive || active
                             ? 'bg-brand-600 text-white'
-                            : 'text-brand-100/90 hover:bg-white/10 hover:text-white',
+                            : 'text-sidebar-muted hover:bg-white/10 hover:text-white',
                         )
                       }
                     >
@@ -111,7 +111,7 @@ export function Sidebar({ mobileOpen, onMobileClose, className }: SidebarProps) 
                           'flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium transition-colors',
                           isActive || active
                             ? 'bg-brand-600 text-white'
-                            : 'text-brand-100/90 hover:bg-white/10 hover:text-white',
+                            : 'text-sidebar-muted hover:bg-white/10 hover:text-white',
                         )
                       }
                     >
@@ -129,7 +129,7 @@ export function Sidebar({ mobileOpen, onMobileClose, className }: SidebarProps) 
                     onClick={() => toggle(group.id)}
                     className={cn(
                       'flex w-full items-center justify-between gap-2 rounded-md px-3 py-2 text-left text-sm font-medium transition-colors',
-                      active ? 'bg-white/10 text-white' : 'text-brand-100/90 hover:bg-white/10 hover:text-white',
+                      active ? 'bg-white/10 text-white' : 'text-sidebar-muted hover:bg-white/10 hover:text-white',
                     )}
                     aria-expanded={isOpen}
                     aria-controls={`nav-group-${group.id}`}
@@ -155,7 +155,7 @@ export function Sidebar({ mobileOpen, onMobileClose, className }: SidebarProps) 
                                 'block rounded-md px-2 py-1.5 text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-300',
                                 isActive
                                   ? 'bg-brand-600 font-medium text-white'
-                                  : 'text-brand-100/80 hover:bg-white/10 hover:text-white',
+                                  : 'text-sidebar-muted hover:bg-white/10 hover:text-white',
                               )
                             }
                           >
@@ -172,7 +172,7 @@ export function Sidebar({ mobileOpen, onMobileClose, className }: SidebarProps) 
         </nav>
         <div className={cn('border-t border-white/10 py-3', collapsed ? 'px-2' : 'px-4')}>
           {!collapsed ? (
-            <p className="text-xs text-brand-200/70">© {new Date().getFullYear()} Sheetal Cool</p>
+            <p className="text-xs text-sidebar-muted">© {new Date().getFullYear()} Sheetal Cool</p>
           ) : null}
         </div>
       </div>
@@ -184,7 +184,7 @@ export function Sidebar({ mobileOpen, onMobileClose, className }: SidebarProps) 
     <>
       <aside
         className={cn(
-          'hidden shrink-0 flex-col text-white transition-[width] duration-200 ease-out lg:flex',
+          'hidden shrink-0 flex-col text-white transition-[width] duration-200 ease-out lg:flex dark:border-r dark:border-sidebar-border',
           collapsed ? 'w-[4.5rem]' : 'w-64',
           className,
         )}
@@ -240,7 +240,7 @@ function SidebarMobileBody({
   return (
     <div className="flex h-full flex-col">
       <div className="flex h-14 shrink-0 items-center gap-2.5 border-b border-white/10 px-4">
-        <div className="flex h-9 w-9 items-center justify-center rounded-md bg-brand-400/20 text-brand-200">
+        <div className="flex h-9 w-9 items-center justify-center rounded-md bg-brand-400/20 text-brand-300">
           <Snowflake className="h-5 w-5" aria-hidden />
         </div>
         <div className="min-w-0">
@@ -270,7 +270,7 @@ function SidebarMobileBody({
                         'flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium transition-colors',
                         isActive || active
                           ? 'bg-brand-600 text-white'
-                          : 'text-brand-100/90 hover:bg-white/10 hover:text-white',
+                          : 'text-sidebar-muted hover:bg-white/10 hover:text-white',
                       )
                     }
                   >
@@ -288,7 +288,7 @@ function SidebarMobileBody({
                   onClick={() => onToggleGroup(group.id)}
                   className={cn(
                     'flex w-full items-center justify-between gap-2 rounded-md px-3 py-2 text-left text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-300',
-                    active ? 'bg-white/10 text-white' : 'text-brand-100/90 hover:bg-white/10 hover:text-white',
+                    active ? 'bg-white/10 text-white' : 'text-sidebar-muted hover:bg-white/10 hover:text-white',
                   )}
                   aria-expanded={isOpen}
                   aria-controls={`nav-group-mobile-${group.id}`}
@@ -314,7 +314,7 @@ function SidebarMobileBody({
                               'block rounded-md px-2 py-1.5 text-sm transition-colors',
                               isActive
                                 ? 'bg-brand-600 font-medium text-white'
-                                : 'text-brand-100/80 hover:bg-white/10 hover:text-white',
+                                : 'text-sidebar-muted hover:bg-white/10 hover:text-white',
                             )
                           }
                         >

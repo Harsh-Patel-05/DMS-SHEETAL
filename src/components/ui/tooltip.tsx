@@ -26,7 +26,7 @@ export function Tooltip({ content, children, side = 'top', className }: TooltipP
           id={tipId}
           role="tooltip"
           className={cn(
-            'absolute z-50 max-w-xs rounded-md border border-border bg-ink px-2 py-1 text-xs text-white shadow-elevated',
+            'absolute z-50 max-w-xs rounded-md border border-border bg-ink px-2 py-1 text-xs text-white shadow-elevated dark:border-border-strong dark:bg-surface-muted dark:text-ink',
             side === 'top' && 'bottom-full left-1/2 mb-1.5 -translate-x-1/2',
             side === 'bottom' && 'left-1/2 top-full mt-1.5 -translate-x-1/2',
           )}

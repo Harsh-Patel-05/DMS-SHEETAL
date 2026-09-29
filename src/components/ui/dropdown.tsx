@@ -168,7 +168,7 @@ export function DropdownMenu({ children, className, align = 'end' }: DropdownMen
       tabIndex={-1}
       onKeyDown={onKeyDown}
       className={cn(
-        'absolute z-50 mt-1.5 min-w-[11rem] overflow-hidden rounded-xl border border-border bg-surface-elevated py-1 shadow-elevated',
+        'absolute z-50 mt-1.5 min-w-[11rem] erp-popover overflow-hidden rounded-xl border border-border bg-surface-elevated py-1 shadow-elevated',
         align === 'end' ? 'right-0' : 'left-0',
         className,
       )}
@@ -209,7 +209,7 @@ export function DropdownItem({
       className={cn(
         'flex w-full items-center rounded-lg px-2.5 py-2 text-left text-sm text-ink',
         'hover:bg-brand-50/80 focus-visible:bg-brand-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-400',
-        'dark:hover:bg-brand-100/10 dark:focus-visible:bg-brand-100/15',
+        'dark:hover:bg-brand-400/10 dark:focus-visible:bg-brand-400/15',
         destructive &&
           'text-danger hover:bg-danger-bg focus-visible:bg-danger-bg dark:hover:bg-danger-bg',
         disabled && 'pointer-events-none opacity-50',

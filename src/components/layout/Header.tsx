@@ -172,7 +172,7 @@ export function Header({ onMenuToggle, onOpenShortcuts, onOpenCommandPalette }: 
   ]
 
   return (
-    <header className="sticky top-0 z-30 border-b border-border/80 bg-surface-elevated/90 pt-[env(safe-area-inset-top)] backdrop-blur-md supports-[backdrop-filter]:bg-surface-elevated/75">
+    <header className="sticky top-0 z-30 border-b border-border/80 bg-surface-elevated/90 pt-[env(safe-area-inset-top)] backdrop-blur-md supports-[backdrop-filter]:bg-surface-elevated/75 dark:bg-surface/85 dark:supports-[backdrop-filter]:bg-surface/70">
       <div className="flex h-14 items-center gap-2 px-3 sm:gap-3 sm:px-4 lg:px-5">
         <Button
           type="button"
@@ -225,7 +225,7 @@ export function Header({ onMenuToggle, onOpenShortcuts, onOpenCommandPalette }: 
           {searchOpen && query.trim() ? (
             <div
               id="header-search-results"
-              className="absolute left-0 top-full z-50 mt-1.5 max-h-96 w-full max-w-2xl overflow-y-auto rounded-lg border border-border bg-surface-elevated py-2 shadow-elevated"
+              className="absolute left-0 top-full z-50 mt-1.5 max-h-96 w-full max-w-2xl overflow-y-auto rounded-lg erp-popover border border-border bg-surface-elevated py-2 shadow-elevated"
               role="region"
               aria-label="Search results"
             >
@@ -343,7 +343,7 @@ export function Header({ onMenuToggle, onOpenShortcuts, onOpenCommandPalette }: 
                 id="header-notifications-panel"
                 role="region"
                 aria-label="Notifications"
-                className="absolute right-0 top-full z-50 mt-1.5 w-[min(22rem,calc(100vw-1.5rem))] overflow-hidden rounded-xl border border-border bg-surface-elevated shadow-elevated"
+                className="absolute right-0 top-full z-50 mt-1.5 w-[min(22rem,calc(100vw-1.5rem))] erp-popover overflow-hidden rounded-xl border border-border bg-surface-elevated shadow-elevated"
               >
                 <div className="flex items-center justify-between border-b border-border px-3 py-2.5">
                   <div>
@@ -371,7 +371,7 @@ export function Header({ onMenuToggle, onOpenShortcuts, onOpenCommandPalette }: 
                           type="button"
                           className={cn(
                             'w-full border-b border-border px-3 py-2.5 text-left text-sm last:border-b-0 hover:bg-surface-muted',
-                            !n.read && 'bg-brand-50/60 dark:bg-brand-100/10',
+                            !n.read && 'bg-brand-50/60 dark:bg-brand-400/10',
                           )}
                           onClick={() => {
                             markNotificationRead(n.id)
@@ -437,7 +437,7 @@ export function Header({ onMenuToggle, onOpenShortcuts, onOpenCommandPalette }: 
                 setUserMenuOpen((v) => !v)
               }}
             >
-              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-100 text-brand-700 ring-1 ring-brand-200/80 dark:bg-brand-100/20 dark:text-brand-200 dark:ring-brand-700/40">
+              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-100 text-brand-700 ring-1 ring-brand-200/80 dark:bg-brand-400/20 dark:text-brand-300 dark:ring-brand-700/40">
                 <User className="h-4 w-4" aria-hidden />
               </div>
               <div className="hidden min-w-0 max-w-[9.5rem] md:block">
@@ -461,10 +461,10 @@ export function Header({ onMenuToggle, onOpenShortcuts, onOpenCommandPalette }: 
                 id="header-user-menu"
                 role="menu"
                 aria-label="Account"
-                className="absolute right-0 top-full z-50 mt-1.5 w-[17.5rem] overflow-hidden rounded-xl border border-border bg-surface-elevated shadow-elevated"
+                className="absolute right-0 top-full z-50 mt-1.5 w-[17.5rem] erp-popover overflow-hidden rounded-xl border border-border bg-surface-elevated shadow-elevated"
               >
                 <div className="flex items-center gap-3 border-b border-border bg-surface-muted/40 px-3.5 py-3">
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand-100 text-brand-700 ring-2 ring-brand-200/70 dark:bg-brand-100/20 dark:text-brand-200 dark:ring-brand-700/40">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand-100 text-brand-700 ring-2 ring-brand-200/70 dark:bg-brand-400/20 dark:text-brand-300 dark:ring-brand-700/40">
                     <User className="h-5 w-5" aria-hidden />
                   </div>
                   <div className="min-w-0 flex-1">
@@ -474,7 +474,7 @@ export function Header({ onMenuToggle, onOpenShortcuts, onOpenCommandPalette }: 
                     {session?.user.email ? (
                       <p className="mt-0.5 truncate text-xs text-ink-muted">{session.user.email}</p>
                     ) : null}
-                    <span className="mt-1.5 inline-flex rounded-full bg-brand-50 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-brand-700 ring-1 ring-brand-200/80 dark:bg-brand-100/15 dark:text-brand-200 dark:ring-brand-700/40">
+                    <span className="mt-1.5 inline-flex rounded-full bg-brand-50 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-brand-700 ring-1 ring-brand-200/80 dark:bg-brand-400/15 dark:text-brand-300 dark:ring-brand-700/40">
                       {session?.user.roleName ?? '—'}
                     </span>
                   </div>

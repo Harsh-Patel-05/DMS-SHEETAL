@@ -306,7 +306,7 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(
             aria-labelledby={triggerId}
             tabIndex={-1}
             onKeyDown={onListKeyDown}
-            className="absolute z-50 mt-1.5 max-h-60 w-full min-w-[11rem] overflow-auto rounded-xl border border-border bg-surface-elevated py-1 shadow-elevated"
+            className="absolute z-50 mt-1.5 max-h-60 w-full min-w-[11rem] overflow-auto erp-popover rounded-xl border border-border bg-surface-elevated py-1 shadow-elevated"
           >
             {items.map((item, i) => {
               if (item.type === 'group') {
@@ -364,8 +364,8 @@ function OptionButton({
       className={cn(
         'flex w-full items-center gap-2 rounded-lg px-2.5 py-2 text-left text-sm text-ink',
         'hover:bg-brand-50/80 focus-visible:bg-brand-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-400',
-        'dark:hover:bg-brand-100/10 dark:focus-visible:bg-brand-100/15',
-        selected && 'bg-brand-50 font-medium text-brand-800 dark:bg-brand-100/15 dark:text-brand-200',
+        'dark:hover:bg-brand-400/10 dark:focus-visible:bg-brand-400/15',
+        selected && 'bg-brand-50 font-medium text-brand-800 dark:bg-brand-400/15 dark:text-brand-300',
         option.disabled && 'pointer-events-none opacity-50',
       )}
       onClick={() => onPick(option.value)}

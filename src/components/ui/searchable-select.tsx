@@ -312,7 +312,7 @@ export const SearchableSelect = forwardRef<SearchableSelectHandle, SearchableSel
             ref={panelRef}
             id={listboxId}
             role="listbox"
-            className="overflow-hidden rounded-md border border-border bg-surface-elevated shadow-elevated"
+            className="erp-popover overflow-hidden rounded-md border border-border bg-surface-elevated shadow-elevated"
             style={panelStyle}
           >
             <div className="flex items-center gap-2 border-b border-border px-2 py-1.5">
@@ -391,7 +391,7 @@ export const SearchableSelect = forwardRef<SearchableSelectHandle, SearchableSel
                   <button
                     type="button"
                     className={cn(
-                      'flex w-full items-center gap-2 px-3 py-2 text-left text-sm text-brand-800 dark:text-brand-200',
+                      'flex w-full items-center gap-2 px-3 py-2 text-left text-sm text-brand-800 dark:text-brand-300',
                       activeIndex === optionRows.length && 'bg-brand-50 dark:bg-brand-900/30',
                     )}
                     onMouseEnter={() => setActiveIndex(optionRows.length)}

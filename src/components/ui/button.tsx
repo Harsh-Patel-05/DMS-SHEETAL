@@ -9,14 +9,14 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary:
-          'bg-brand-600 text-white hover:bg-brand-700 active:bg-brand-800 shadow-card dark:shadow-[0_4px_14px_rgb(31_155_192/0.28)]',
+          'bg-brand-600 text-white hover:bg-brand-700 active:bg-brand-800 shadow-card dark:bg-brand-600 dark:hover:bg-brand-500 dark:shadow-[0_4px_16px_rgb(18_147_189/0.32),inset_0_1px_0_rgb(255_255_255/0.12)]',
         secondary:
           'border border-brand-200 bg-brand-50 text-brand-800 hover:bg-brand-100 dark:border-brand-400/35 dark:bg-brand-100 dark:text-brand-300 dark:hover:bg-brand-200',
         outline:
-          'border border-border bg-surface-elevated text-ink hover:bg-surface-muted shadow-card dark:hover:bg-surface-muted',
+          'border border-border bg-surface-elevated text-ink hover:bg-surface-muted shadow-card dark:border-border-strong/70 dark:bg-surface-muted/60 dark:hover:border-brand-400/50 dark:hover:bg-surface-muted',
         ghost: 'text-ink-muted hover:bg-surface-muted hover:text-ink dark:hover:bg-surface-muted',
         danger:
-          'bg-danger text-white hover:opacity-90 active:opacity-80 shadow-card',
+          'bg-danger text-white hover:opacity-90 active:opacity-80 shadow-card dark:bg-[#dc2626] dark:shadow-[0_4px_14px_rgb(220_38_38/0.3)]',
       },
       size: {
         sm: 'h-[var(--size-control-sm)] px-3 text-xs',

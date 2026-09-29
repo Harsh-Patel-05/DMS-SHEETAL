@@ -203,7 +203,7 @@ export default function SettingsPage() {
                     className={cn(
                       'flex w-full items-center gap-2 rounded-md px-2.5 py-2 text-left text-sm transition-colors',
                       active
-                        ? 'bg-brand-50 font-medium text-brand-800 dark:bg-brand-900/40 dark:text-brand-200'
+                        ? 'bg-brand-50 font-medium text-brand-800 dark:bg-brand-900/40 dark:text-brand-300'
                         : 'text-ink-muted hover:bg-surface hover:text-ink',
                     )}
                   >

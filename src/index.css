@@ -61,7 +61,7 @@
   --chart-2: #0e8fb4;
   --chart-3: #025f88;
   --chart-4: #2ea8cb;
-  --chart-5: #64748b;
+  --chart-5: #d97706;
   --chart-tick: #475569;
   --chart-axis: #cbd5e1;
   --chart-grid: #e2e8f0;
@@ -100,67 +100,78 @@
 html.dark {
   color-scheme: dark;
 
-  /* 600 = primary fill, 700/800 = darker hover (usable on buttons) */
-  --color-brand-50: rgb(46 168 203 / 0.12);
-  --color-brand-100: rgb(46 168 203 / 0.18);
-  --color-brand-200: rgb(46 168 203 / 0.32);
-  --color-brand-300: #7dd3ea;
-  --color-brand-400: #4eb8d6;
-  --color-brand-500: #2ea8cb;
-  --color-brand-600: #1f9bc0;
-  --color-brand-700: #1782a3;
-  --color-brand-800: #126a86;
-  --color-brand-900: #0e5570;
+  /*
+    50–200 are opaque deep-teal tints (selected rows, chips, hover fills);
+    300–400 are readable accent text; 600 = primary fill with white text.
+  */
+  --color-brand-50: #0f2536;
+  --color-brand-100: #123045;
+  --color-brand-200: #184259;
+  --color-brand-300: #8adbf0;
+  --color-brand-400: #4cc3e3;
+  --color-brand-500: #26aed5;
+  --color-brand-600: #1293bd;
+  --color-brand-700: #0d7ca2;
+  --color-brand-800: #0b6585;
+  --color-brand-900: #0a4f69;
 
-  --color-surface: #0b1524;
-  --color-surface-elevated: #152338;
-  --color-surface-muted: #101c2e;
-  --color-surface-sunken: #0d1828;
-  --color-border: #2a3f58;
-  --color-border-strong: #3d5a78;
-  --color-ink: #f1f6fb;
-  --color-ink-muted: #a8b9cc;
-  --color-ink-subtle: #7d93ab;
-  --color-overlay: rgb(4 8 16 / 0.72);
-  --color-ring-offset: #152338;
+  --color-surface: #080f1b;
+  --color-surface-elevated: #111c2d;
+  --color-surface-muted: #172538;
+  --color-surface-sunken: #0c1523;
+  --color-border: #22344b;
+  --color-border-strong: #34506e;
+  --color-ink: #eef4fa;
+  --color-ink-muted: #a3b5c9;
+  --color-ink-subtle: #7489a2;
+  --color-overlay: rgb(3 7 14 / 0.74);
+  --color-ring-offset: #111c2d;
 
+  /* Opaque status fills so toasts/banners never show content through them */
   --color-success: #34d399;
-  --color-success-bg: rgb(16 185 129 / 0.16);
-  --color-success-border: rgb(52 211 153 / 0.4);
+  --color-success-bg: #10302f;
+  --color-success-border: #1f6b56;
   --color-warning: #fbbf24;
-  --color-warning-bg: rgb(245 158 11 / 0.16);
-  --color-warning-border: rgb(251 191 36 / 0.4);
+  --color-warning-bg: #2f2a1f;
+  --color-warning-border: #7a5d1c;
   --color-danger: #f87171;
-  --color-danger-bg: rgb(239 68 68 / 0.16);
-  --color-danger-border: rgb(248 113 113 / 0.4);
+  --color-danger-bg: #33202a;
+  --color-danger-border: #7f3340;
   --color-info: #7dd3fc;
-  --color-info-bg: rgb(14 165 233 / 0.16);
-  --color-info-border: rgb(125 211 252 / 0.4);
+  --color-info-bg: #102c44;
+  --color-info-border: #1f5f86;
 
-  --color-sidebar: #07101c;
-  --color-sidebar-elevated: #0f1c2e;
-  --color-sidebar-border: rgb(78 184 214 / 0.16);
+  --color-sidebar: #060c16;
+  --color-sidebar-elevated: #0e1a2b;
+  --color-sidebar-border: rgb(76 195 227 / 0.14);
   --color-sidebar-fg: #e8f4fc;
-  --color-sidebar-muted: rgb(168 185 204 / 0.85);
+  --color-sidebar-muted: #9fb3c8;
 
-  --chart-1: #4eb8d6;
-  --chart-2: #2ea8cb;
-  --chart-3: #7dd3ea;
-  --chart-4: #1f9bc0;
-  --chart-5: #94a3b8;
-  --chart-tick: #a8b9cc;
-  --chart-axis: #3d5a78;
-  --chart-grid: #24384f;
-  --chart-tooltip-bg: #1a2d44;
-  --chart-tooltip-border: #3d5a78;
+  --chart-1: #4cc3e3;
+  --chart-2: #26aed5;
+  --chart-3: #8adbf0;
+  --chart-4: #1293bd;
+  --chart-5: #f5b544;
+  --chart-tick: #a3b5c9;
+  --chart-axis: #34506e;
+  --chart-grid: #1c2d42;
+  --chart-tooltip-bg: #172538;
+  --chart-tooltip-border: #34506e;
 
-  --shadow-card: 0 1px 0 rgb(255 255 255 / 0.04), 0 1px 3px rgb(0 0 0 / 0.4);
-  --shadow-elevated: 0 10px 28px rgb(0 0 0 / 0.5);
-  --shadow-dialog: 0 22px 52px rgb(0 0 0 / 0.62);
+  --shadow-card: inset 0 1px 0 rgb(255 255 255 / 0.03), 0 1px 2px rgb(0 0 0 / 0.45), 0 4px 14px rgb(0 0 0 / 0.22);
+  --shadow-elevated: 0 12px 32px rgb(0 0 0 / 0.55), 0 0 0 1px rgb(76 195 227 / 0.06);
+  --shadow-dialog: 0 24px 60px rgb(0 0 0 / 0.65), 0 0 0 1px rgb(76 195 227 / 0.08);
 }
 
 html:not(.dark) {
   color-scheme: light;
+}
+
+/* Unlayered so it beats bg-/border- utilities: popups sit one step above cards in dark */
+html.dark .erp-popover {
+  background-color: #16243a;
+  border-color: var(--color-border-strong);
+  box-shadow: var(--shadow-elevated);
 }
 
 @layer base {
@@ -184,8 +195,18 @@ html:not(.dark) {
 
   html.dark body {
     background-image:
-      radial-gradient(800px 380px at 12% -12%, color-mix(in srgb, var(--color-brand-500) 14%, transparent), transparent),
-      radial-gradient(640px 320px at 100% 0%, color-mix(in srgb, var(--color-brand-700) 12%, transparent), transparent);
+      radial-gradient(900px 420px at 18% -14%, rgb(38 174 213 / 0.1), transparent),
+      radial-gradient(700px 360px at 100% -6%, rgb(13 124 162 / 0.12), transparent);
+    background-attachment: fixed;
+  }
+
+  html.dark ::selection {
+    background: rgb(76 195 227 / 0.35);
+    color: #fff;
+  }
+
+  html.dark {
+    scrollbar-color: var(--color-border-strong) var(--color-surface);
   }
 
   #root {
@@ -285,36 +306,26 @@ html:not(.dark) {
   }
 
   html.dark .erp-control {
-    background-color: var(--color-surface-muted);
+    background-color: var(--color-surface-sunken);
     border-color: var(--color-border);
-    box-shadow: inset 0 1px 2px rgb(0 0 0 / 0.28);
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 0.35);
+  }
+
+  html.dark .erp-control:hover:not(:disabled):not(:focus-visible) {
+    border-color: var(--color-border-strong);
   }
 
   html.dark .erp-control:focus-visible {
     border-color: var(--color-brand-400);
-    background-color: var(--color-surface-elevated);
+    background-color: var(--color-surface-sunken);
+    box-shadow: 0 0 0 3px rgb(76 195 227 / 0.18);
   }
 
   html.dark .erp-card,
-  html.dark .erp-table-wrap {
-    border-color: var(--color-border);
-    box-shadow: var(--shadow-card);
-  }
-
-  html.dark .erp-list-toolbar {
-    background: color-mix(in srgb, var(--color-surface-muted) 80%, var(--color-brand-50));
-  }
-
-  html.dark .erp-table thead {
-    background: color-mix(in srgb, var(--color-surface-muted) 70%, var(--color-brand-100));
-  }
-
-  html.dark .erp-table tbody tr:nth-child(even) {
-    background-color: color-mix(in srgb, var(--color-brand-50) 55%, transparent);
-  }
-
-  html.dark .erp-table tbody tr:hover {
-    background-color: color-mix(in srgb, var(--color-brand-100) 70%, var(--color-surface-elevated));
+  html.dark .erp-surface,
+  html.dark .erp-table-wrap,
+  html.dark .erp-dialog {
+    background-image: linear-gradient(180deg, rgb(255 255 255 / 0.018), transparent 120px);
   }
 
   .erp-control::placeholder {
@@ -359,7 +370,12 @@ html:not(.dark) {
   }
 
   html.dark .erp-table thead {
-    background: color-mix(in srgb, var(--color-brand-100) 35%, var(--color-surface-muted));
+    background: color-mix(in srgb, var(--color-brand-50) 60%, var(--color-surface-sunken));
+  }
+
+  html.dark .erp-table thead th {
+    color: var(--color-ink-subtle);
+    letter-spacing: 0.06em;
   }
 
   .erp-table thead th {
@@ -371,12 +387,17 @@ html:not(.dark) {
     @apply border-b border-border;
   }
 
+  /* Row fills must be opaque: sticky cells use bg-inherit and would double-tint translucent colors */
   .erp-table tbody tr:nth-child(even) {
-    background-color: color-mix(in srgb, var(--color-brand-50) 35%, transparent);
+    background-color: color-mix(in srgb, var(--color-brand-50) 35%, var(--color-surface-elevated));
+  }
+
+  html.dark .erp-table tbody tr {
+    border-color: color-mix(in srgb, var(--color-border) 70%, transparent);
   }
 
   html.dark .erp-table tbody tr:nth-child(even) {
-    background-color: color-mix(in srgb, var(--color-brand-100) 12%, transparent);
+    background-color: color-mix(in srgb, var(--color-brand-50) 30%, var(--color-surface-elevated));
   }
 
   .erp-table tbody tr:hover {
@@ -384,7 +405,7 @@ html:not(.dark) {
   }
 
   html.dark .erp-table tbody tr:hover {
-    background-color: color-mix(in srgb, var(--color-brand-400) 12%, var(--color-surface-elevated));
+    background-color: color-mix(in srgb, var(--color-brand-50) 85%, var(--color-surface-elevated));
   }
 
   .erp-table tbody td {
@@ -399,7 +420,7 @@ html:not(.dark) {
   }
 
   html.dark .erp-list-toolbar {
-    background: color-mix(in srgb, var(--color-brand-100) 14%, var(--color-surface-elevated));
+    background: color-mix(in srgb, var(--color-brand-50) 35%, var(--color-surface-elevated));
   }
 
   .erp-dialog {
@@ -625,6 +646,15 @@ html:not(.dark) {
 
   .mobile-bottom-fab:active {
     transform: scale(0.96);
+  }
+
+  html.dark .mobile-bottom-bar,
+  html.dark .billing-sticky-bar {
+    box-shadow: 0 -10px 28px rgb(0 0 0 / 0.45);
+  }
+
+  html.dark .mobile-bottom-fab {
+    box-shadow: 0 6px 18px rgb(18 147 189 / 0.4);
   }
 
   .mobile-quick-sheet {

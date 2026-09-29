@@ -75,7 +75,7 @@ export function StatCard({
           ) : null}
         </div>
         {Icon ? (
-          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md border border-border bg-brand-50 text-brand-700 dark:bg-brand-100/15 dark:text-brand-300">
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md border border-border bg-brand-50 text-brand-700 dark:border-brand-400/25 dark:bg-brand-400/10 dark:text-brand-300">
             <Icon className="h-5 w-5" aria-hidden />
           </div>
         ) : null}

@@ -88,7 +88,7 @@ export default function LoginPage() {
         />
         <div className="relative flex items-center gap-3">
           <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-brand-500/25 ring-1 ring-brand-300/30">
-            <Snowflake className="h-6 w-6 text-brand-200" />
+            <Snowflake className="h-6 w-6 text-brand-300" />
           </div>
           <div>
             <p className="font-display text-lg font-semibold text-white">DMS.SHEETAL</p>

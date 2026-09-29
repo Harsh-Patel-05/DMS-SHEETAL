@@ -891,7 +891,7 @@ export function DataTable<T>({
                       onSelect={() => setDensity(value)}
                       className={cn(
                         density === value &&
-                          'bg-brand-50 font-medium text-brand-700 dark:bg-brand-900/30 dark:text-brand-200',
+                          'bg-brand-50 font-medium text-brand-700 dark:bg-brand-900/30 dark:text-brand-300',
                       )}
                     >
                       {label}
@@ -1146,7 +1146,7 @@ export function DataTable<T>({
                     <TableRow
                       key={rowId}
                       data-state={selected ? 'selected' : undefined}
-                      className={cn(selected && 'bg-brand-50/50 dark:bg-brand-900/15')}
+                      className={cn(selected && 'bg-brand-50 dark:bg-brand-100')}
                       style={shouldVirtualize ? { height: rowHeightPx } : undefined}
                     >
                       {selectable ? (
@@ -1154,7 +1154,6 @@ export function DataTable<T>({
                           className={cn(
                             cellPad,
                             'sticky left-0 z-[1] w-11 px-2 text-center bg-inherit',
-                            selected && 'bg-brand-50 dark:bg-brand-900/20',
                           )}
                         >
                           <div className="flex justify-center">
@@ -1173,7 +1172,6 @@ export function DataTable<T>({
                             cellPad,
                             stickyClass(col.sticky),
                             col.sticky === 'left' && selectable ? 'left-11' : undefined,
-                            selected && col.sticky && 'bg-brand-50 dark:bg-brand-900/20',
                             col.className,
                           )}
                         >

@@ -47,7 +47,7 @@ function ActivityRow({ item }: { item: GlobalActivityItem }) {
   return (
     <li className="relative flex gap-3 border-b border-border px-4 py-3 last:border-b-0 hover:bg-surface/80">
       <div
-        className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-100 text-xs font-semibold text-brand-800 dark:bg-brand-900/40 dark:text-brand-200"
+        className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-100 text-xs font-semibold text-brand-800 dark:bg-brand-900/40 dark:text-brand-300"
         title={item.whoName}
       >
         {initials(item.whoName)}

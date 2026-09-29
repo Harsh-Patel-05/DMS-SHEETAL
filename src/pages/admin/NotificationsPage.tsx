@@ -170,7 +170,7 @@ export default function NotificationsPage() {
           >
             {NOTIFICATION_CATEGORY_LABELS[c]}
             {byCategory[c] > 0 ? (
-              <span className="ml-1.5 rounded-full bg-brand-100 px-1.5 text-[10px] text-brand-700">
+              <span className="ml-1.5 rounded-full bg-brand-100 px-1.5 text-[10px] text-brand-700 dark:bg-brand-400/20 dark:text-brand-300">
                 {byCategory[c]}
               </span>
             ) : null}

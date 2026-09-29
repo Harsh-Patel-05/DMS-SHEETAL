@@ -172,7 +172,7 @@ export default function ImportCenterPage() {
             className={cn(
               'flex items-center gap-2 rounded-md border px-3 py-1.5 text-xs font-medium',
               index <= activeStep
-                ? 'border-brand-300 bg-brand-50 text-brand-800 dark:border-brand-700 dark:bg-brand-900/30 dark:text-brand-200'
+                ? 'border-brand-300 bg-brand-50 text-brand-800 dark:border-brand-700 dark:bg-brand-900/30 dark:text-brand-300'
                 : 'border-border bg-surface text-ink-muted',
             )}
           >

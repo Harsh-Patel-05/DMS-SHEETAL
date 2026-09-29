@@ -372,7 +372,7 @@ function AgingSection({
             className={cn(
               'flex w-full items-center justify-between rounded-md border px-3 py-2 text-sm',
               filter === 'all'
-                ? 'border-brand-300 bg-brand-50 font-medium text-brand-900 dark:border-brand-600 dark:bg-brand-100/15 dark:text-brand-200'
+                ? 'border-brand-300 bg-brand-50 font-medium text-brand-900 dark:border-brand-600 dark:bg-brand-400/15 dark:text-brand-300'
                 : 'border-border hover:bg-surface',
             )}
             onClick={() => onFilterChange('all')}
@@ -387,7 +387,7 @@ function AgingSection({
               className={cn(
                 'flex w-full items-center justify-between rounded-md border px-3 py-2 text-sm',
                 filter === key
-                  ? 'border-brand-300 bg-brand-50 font-medium text-brand-900 dark:border-brand-600 dark:bg-brand-100/15 dark:text-brand-200'
+                  ? 'border-brand-300 bg-brand-50 font-medium text-brand-900 dark:border-brand-600 dark:bg-brand-400/15 dark:text-brand-300'
                   : 'border-border hover:bg-surface',
               )}
               onClick={() => onFilterChange(key)}

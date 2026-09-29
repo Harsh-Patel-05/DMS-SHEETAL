@@ -91,7 +91,7 @@ export function NetworkStatusIndicator() {
       </button>
 
       {open ? (
-        <div className="absolute right-0 top-full z-50 mt-1.5 w-[18.5rem] rounded-lg border border-border bg-surface-elevated p-3 shadow-elevated">
+        <div className="absolute right-0 top-full z-50 mt-1.5 w-[18.5rem] erp-popover rounded-lg border border-border bg-surface-elevated p-3 shadow-elevated">
           <div className="flex items-start justify-between gap-2">
             <div>
               <p className="text-sm font-semibold text-ink">Network &amp; sync</p>

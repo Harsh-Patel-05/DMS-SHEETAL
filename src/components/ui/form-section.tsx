@@ -27,7 +27,7 @@ export function FormSection({
       <div className="flex flex-wrap items-start justify-between gap-3 border-b border-border pb-3">
         <div className="flex min-w-0 items-start gap-3">
           {step != null || Icon ? (
-            <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-brand-50 text-sm font-semibold text-brand-800 dark:bg-brand-900/40 dark:text-brand-200">
+            <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-brand-50 text-sm font-semibold text-brand-800 dark:bg-brand-900/40 dark:text-brand-300">
               {Icon ? <Icon className="h-4 w-4" aria-hidden /> : step}
             </div>
           ) : null}
@@ -92,7 +92,7 @@ export function FormStepper({ steps, current, onStepClick, className }: FormStep
                   className={cn(
                     'flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-semibold',
                     active && 'bg-brand-600 text-white',
-                    done && !active && 'bg-brand-100 text-brand-800 dark:bg-brand-900/50 dark:text-brand-200',
+                    done && !active && 'bg-brand-100 text-brand-800 dark:bg-brand-900/50 dark:text-brand-300',
                     !active && !done && 'bg-surface-muted text-ink-muted',
                   )}
                 >

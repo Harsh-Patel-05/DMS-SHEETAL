@@ -733,8 +733,8 @@ export function DataTable<T>({
   const content = (
     <>
       <div className="erp-list-toolbar flex flex-col gap-2.5 p-3 print:hidden">
-        <div className="flex flex-col gap-2.5 md:flex-row md:items-center md:justify-between md:gap-3">
-          <div className="flex min-w-0 flex-1 flex-col gap-2 sm:flex-row sm:items-center">
+        <div className="flex flex-wrap items-center justify-between gap-2.5 md:gap-3">
+          <div className="flex min-w-0 flex-[1_1_26rem] flex-col gap-2 sm:flex-row sm:items-center">
             {searchable ? (
               <SearchInput
                 placeholder={searchPlaceholder}
@@ -758,7 +758,7 @@ export function DataTable<T>({
             ) : null}
           </div>
 
-          <div className="mobile-filter-row flex flex-wrap items-center gap-1.5 md:justify-end">
+          <div className="mobile-filter-row flex flex-wrap items-center gap-1.5">
             {toolbar}
 
             {advancedFilterEnabled ? (

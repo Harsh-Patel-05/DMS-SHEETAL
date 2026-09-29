@@ -3,16 +3,15 @@ import { spawnSync } from 'node:child_process'
 
 process.env.GITHUB_PAGES = '1'
 
-const npm = process.platform === 'win32' ? 'npm.cmd' : 'npm'
-const build = spawnSync(npm, ['run', 'build'], { stdio: 'inherit', env: process.env })
-if (build.status !== 0) process.exit(build.status ?? 1)
+// Node refuses to spawn .cmd shims on Windows without a shell (EINVAL)
+const spawnOpts = { stdio: 'inherit', env: process.env, shell: process.platform === 'win32' }
 
+function run(cmd, args) {
+  const result = spawnSync(cmd, args, spawnOpts)
+  if (result.error) console.error(result.error)
+  if (result.status !== 0) process.exit(result.status ?? 1)
+}
+
+run('npm', ['run', 'build'])
 copyFileSync('dist/index.html', 'dist/404.html')
-
-const npx = process.platform === 'win32' ? 'npx.cmd' : 'npx'
-const publish = spawnSync(
-  npx,
-  ['--yes', 'gh-pages', '-d', 'dist', '-b', 'gh-pages', '-m', 'Deploy frontend to GitHub Pages'],
-  { stdio: 'inherit', env: process.env },
-)
-process.exit(publish.status ?? 1)
+run('npx', ['--yes', 'gh-pages', '-d', 'dist', '-b', 'gh-pages', '-m', '"Deploy frontend to GitHub Pages"'])
